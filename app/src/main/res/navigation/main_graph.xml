@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/main_const">
+
+    <fragment
+        android:id="@+id/linearlayout"
+        android:name="com.example.lab3.linearlayout"
+        android:label="fragment_linearlayout"
+        tools:layout="@layout/fragment_linearlayout" />
+    <fragment
+        android:id="@+id/relativelayout"
+        android:name="com.example.lab3.relativelayout"
+        android:label="fragment_relativelayout"
+        tools:layout="@layout/fragment_relativelayout" />
+    <fragment
+        android:id="@+id/gridlayout"
+        android:name="com.example.lab3.gridlayout"
+        android:label="fragment_gridlayout"
+        tools:layout="@layout/fragment_gridlayout" />
+    <fragment
+        android:id="@+id/framelayout"
+        android:name="com.example.lab3.framelayout"
+        android:label="fragment_framelayout"
+        tools:layout="@layout/fragment_framelayout" />
+    <fragment
+        android:id="@+id/main_const"
+        android:name="com.example.lab3.main_const"
+        android:label="fragment_main_const"
+        tools:layout="@layout/fragment_main_const" >
+        <action
+            android:id="@+id/action_linear"
+            app:destination="@id/linearlayout" />
+        <action
+            android:id="@+id/action_relative"
+            app:destination="@id/relativelayout" />
+        <action
+            android:id="@+id/action_grid"
+            app:destination="@id/gridlayout" />
+        <action
+            android:id="@+id/action_frame"
+            app:destination="@id/framelayout" />
+    </fragment>
+
+</navigation>

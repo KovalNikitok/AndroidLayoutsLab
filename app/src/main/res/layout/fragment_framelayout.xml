@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".framelayout">
+
+    <Button
+        android:id="@+id/ConsoleBackbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/back_text"/>
+
+    <ImageView
+        android:id="@+id/imgPS5"
+        android:background="#2e3649"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ps5"/>
+
+    <ImageView
+        android:id="@+id/imgXboxSX"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/xboxsx"
+        android:visibility="gone"
+        android:background="#282828"/>
+
+</FrameLayout>
